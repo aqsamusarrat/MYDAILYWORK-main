@@ -103,7 +103,7 @@ def play_game():
     result = check_winner(board)
 
     if result == HUMAN:
-        print(" You Win!")
+        print("3 You Win!")
         scores["Human"] += 1
     elif result == AI:
         print(" AI Wins!")
