@@ -37,7 +37,8 @@ def generate_caption(features):
 
 if __name__ == "__main__":
 
-    image_path = "test.jpg"  # Place an image with this name in same folder
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    image_path = os.path.join(SCRIPT_DIR, "test.jpg")
 
     if not os.path.exists(image_path):
         print(" Image not found. Please add 'test.jpg' in this folder.")
